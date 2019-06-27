@@ -15,8 +15,8 @@ public class TestUsingDataProvidersFiles {
 
     @BeforeMethod
     public void setup(){
-//        System.setProperty("webdriver.chrome.driver",
-//                "drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",
+                "drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("http://verstandqa.com/login-employee-v2/");
         wait = new WebDriverWait(driver, 10);
