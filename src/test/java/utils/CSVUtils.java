@@ -10,6 +10,13 @@ import java.util.List;
 
 public class CSVUtils {
 
+    /**
+     * este metodo es para obtener los datos del csv y almacenarlos en una lista de User
+     * User es una clase que se utiliza como como modelo para los datos
+     * @param br: BufferedReader que almacena el contenido del csv
+     * @return lista de User
+     * @throws IOException
+     */
     public static List<User> getUsersData(BufferedReader br) throws IOException {
         List<User> usersData = new ArrayList<User>();
         Iterable<CSVRecord> records = CSVFormat.DEFAULT.parse(br);
